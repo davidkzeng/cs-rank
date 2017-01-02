@@ -1,90 +1,90 @@
-1,Massachusetts Institute of Technology
-2,University of California - Berkeley
-3,Stanford University
-4,Carnegie Mellon University
-5,Cornell University
-6,Harvard University
-7,Princeton University
-8,University of Washington
-9,University of Illinois at Urbana-Champaign
-10,California Institute of Technology
-11,University of Wisconsin - Madison
-12,University of Texas - Austin
-13,University of Toronto
-14,University of California - Los Angeles
-15,University of Pennsylvania
-16,University of Michigan
-17,Georgia Institute of Technology
-18,Columbia University
-19,Yale University
-20,University of Maryland - College Park
-21,University of Massachusetts - Amherst
-22,University of California - San Diego
-23,Stony Brook University
-24,Brown University
-25,Purdue University
-26,New York University
-27,University of North Carolina - Chapel Hill
-28,Rice University
-29,University of Minnesota - Twin Cities
-30,University of Pittsburgh
-31,University of Waterloo
-32,Ohio State University
-33,University of Virginia
-34,University of Chicago
-35,University of Southern California
-36,Pennsylvania State University
-37,University of Rochester
-38,University of California - Irvine
-39,University of Utah
-40,University of Colorado Boulder
-41,Johns Hopkins University
-42,Rutgers - State University of New Jersey - New Brunswick
-43,University of California - Santa Barbara
-44,University of British Columbia
-45,Northwestern University
-46,Duke University
-47,University of California - Davis
-48,North Carolina State University
-49,University of Arizona
-50,Michigan State University
-51,University of Alberta
-52,Washington University - St. Louis
-53,Dartmouth College
-54,University of Iowa
-55,George Mason University
-56,Boston University
-57,Texas A&M University
-58,University of Notre Dame
-59,University of Texas - Dallas
-60,University of Nebraska - Lincoln
-61,University of California - Santa Cruz
-62,Iowa State University
-63,Arizona State University
-64,Case Western Reserve University
-65,Vanderbilt University
-66,Brandeis University
-67,University of Illinois at Chicago
-68,Clemson University
-69,University of Calgary
-70,University of Florida
-71,University of California - Riverside
-72,Virginia Polytechnic Institute and State University
-73,Northeastern University
-74,Rensselaer Polytechnic Institute
-75,Florida State University
-76,Washington State University
-77,University of Delaware
-78,University of Oregon
-79,Tufts University
-80,McGill University
-81,Indiana University Bloomington
-82,Oregon State University
-83,University of Tennessee - Knoxville
-84,University of Maryland - Baltimore County
-85,Naval Postgraduate University
-86,Colorado State University
-87,Simon Fraser University (Canada)
-88,William & Mary
-89,Polytechnic Institute of New York University
-90,University of Tulsa
+1,Massachusetts Institute of Technology,0.0960785875726
+2,University of California - Berkeley,0.081245594861
+3,Stanford University,0.0759497564394
+4,Carnegie Mellon University,0.049300513707
+5,Cornell University,0.029901770726
+6,Princeton University,0.0285801200855
+7,Harvard University,0.0271732601115
+8,University of Washington,0.0258604638735
+9,University of Illinois at Urbana-Champaign,0.0256506989362
+10,California Institute of Technology,0.019470448406
+11,University of Toronto,0.0177796174614
+12,University of Wisconsin - Madison,0.0177547477317
+13,University of Texas - Austin,0.0166190833979
+14,University of California - Los Angeles,0.015403553676
+15,Georgia Institute of Technology,0.0151959446201
+16,University of Pennsylvania,0.0150251473343
+17,University of Michigan,0.0139441481991
+18,University of Maryland - College Park,0.0136406677851
+19,Columbia University,0.0133079289688
+20,University of Massachusetts - Amherst,0.0130663198272
+21,Yale University,0.0127787040716
+22,Purdue University,0.0113265062359
+23,University of California - San Diego,0.0109817856542
+24,Stony Brook University,0.0102837074932
+25,Brown University,0.0101822062455
+26,New York University,0.00930715493913
+27,Rice University,0.0092944583957
+28,University of North Carolina - Chapel Hill,0.00869373166512
+29,University of Waterloo,0.00833744598808
+30,University of Virginia,0.00809467807957
+31,Ohio State University,0.0080478752337
+32,University of Minnesota - Twin Cities,0.00796077780913
+33,University of Pittsburgh,0.00782642608522
+34,University of Southern California,0.0073873721287
+35,University of Utah,0.00731338259658
+36,University of California - Irvine,0.00723503356195
+37,Pennsylvania State University,0.00714233726954
+38,University of Rochester,0.00706722818599
+39,University of California - Santa Barbara,0.0069228488101
+40,University of Chicago,0.00687535721059
+41,University of Colorado Boulder,0.00658326734069
+42,University of British Columbia,0.00649845643402
+43,University of California - Davis,0.00641731042803
+44,Rutgers - State University of New Jersey - New Brunswick,0.00636136625188
+45,Johns Hopkins University,0.00624164144848
+46,North Carolina State University,0.00596157528916
+47,Northwestern University,0.00588531246533
+48,University of Alberta,0.00573606496448
+49,Michigan State University,0.00573594079152
+50,Duke University,0.00571055134111
+51,University of Arizona,0.00528492151209
+52,Washington University - St. Louis,0.00503364897485
+53,University of Iowa,0.00471170787688
+54,Dartmouth College,0.00451082631395
+55,Texas A&M University,0.00450725746401
+56,George Mason University,0.00447046195761
+57,Boston University,0.00436572351511
+58,Iowa State University,0.00435535150621
+59,University of Notre Dame,0.00433536668243
+60,Arizona State University,0.00425595697696
+61,Vanderbilt University,0.00423485951414
+62,University of Nebraska - Lincoln,0.00421542935242
+63,Clemson University,0.00410447822284
+64,University of Texas - Dallas,0.0040242902452
+65,Case Western Reserve University,0.00401762394327
+66,University of California - Santa Cruz,0.0040027559897
+67,University of Illinois at Chicago,0.00391928026298
+68,Northeastern University,0.00375643944274
+69,University of Calgary,0.00375104119844
+70,Rensselaer Polytechnic Institute,0.00374560977814
+71,University of California - Riverside,0.00373659434064
+72,University of Florida,0.00371598592575
+73,Brandeis University,0.00370265889917
+74,Washington State University,0.00367208466777
+75,Virginia Polytechnic Institute and State University,0.00363512512497
+76,Florida State University,0.00359195357062
+77,University of Delaware,0.00356896386692
+78,University of Oregon,0.00349535499785
+79,McGill University,0.00340404040404
+80,Tufts University,0.00340199600442
+81,Colorado State University,0.00333333333333
+82,Polytechnic Institute of New York University,0.00333333333333
+83,University of Tulsa,0.00333333333333
+84,University of Maryland - Baltimore County,0.00333333333333
+85,William & Mary,0.00333333333333
+86,Oregon State University,0.00333333333333
+87,Simon Fraser University (Canada),0.00333333333333
+88,University of Tennessee - Knoxville,0.00333333333333
+89,Naval Postgraduate University,0.00333333333333
+90,Indiana University Bloomington,0.00333333333333

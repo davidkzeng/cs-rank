@@ -1,3 +1,5 @@
+import numpy as np
+
 prof_file = open('prof.txt', 'r')
 
 ENTRY_COLUMNS = ['id', 'name', 'university', 'phd', 'gender', 'type', 'joinyear', 'field']
@@ -36,24 +38,18 @@ def generate_schools_list():
     if prof_entry.phd:
       schools.add(prof_entry.phd)
 
-  top_schools_list = [x for x in list(top_schools) if top_schools[x] > 5]
+  top_schools_list = [school for school in top_schools if top_schools[school] > 0]
+
+  # Sort by number of professors in the database
   top_schools_list = sorted(top_schools_list, key=lambda school: top_schools[school], reverse=True)
 
-  schools_info = ['%d,%s' % (x, top_schools_list[x]) for x in range(len(top_schools_list))]
-
-  output = '\n'.join(schools_info)
-  uni_file = open('schools.txt', 'w')
-  uni_file.write(output)
-  uni_file.close()
+  return top_schools_list
 
 def generate_graph():
-  uni_file = open('schools.txt', 'r')
   top_school_map = dict()
-  top_schools = []
-  for school_string in uni_file:
-    values = school_string.rstrip().split(',')
-    top_school_map[values[1]] = int(values[0])
-    top_schools.append(values[1])
+  top_schools = generate_schools_list()
+  for idx in range(len(top_schools)):
+    top_school_map[top_schools[idx]] = idx
 
   num_schools = len(top_school_map)
   adjacency = [[0 for _ in top_school_map] for _ in top_school_map]
@@ -65,12 +61,13 @@ def generate_graph():
       # add edge weight from uni towards phd
       adjacency[top_school_map[prof_entry.university]][top_school_map[prof_entry.phd]] += 1
 
-  # output = ','.join(top_schools) + '\n'
-  output = '\n'.join([','.join([str(x) for x in row]) for row in adjacency])
+  output = ','.join(top_schools) + '\n'
+  output += '\n'.join([','.join([str(x) for x in row]) for row in adjacency])
 
   adj_file = open('adj.txt', 'w')
   adj_file.write(output)
   adj_file.close()
+  return (top_schools, adjacency)
 
 generate_schools_list()
 generate_graph()
