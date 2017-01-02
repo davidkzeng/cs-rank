@@ -1,92 +1,90 @@
-0,Brown University
-1,Rice University
-2,University of Florida
-3,Washington State University
-4,University of Waterloo
-5,North Carolina State University
-6,University of Illinois at Urbana-Champaign
-7,Arizona State University
-8,University of Pittsburgh
-9,Polytechnic Institute of New York University
-10,University of Pennsylvania
-11,University of Rochester
-12,University of California - Santa Cruz
-13,University of British Columbia
-14,University of Tulsa
-15,Boston University
-16,University of California - San Diego
-17,Oregon State University
-18,New York University
-19,University of California - Los Angeles
-20,Indiana University Bloomington
-21,Harvard University
-22,Ohio State University
-23,University of Tennessee - Knoxville
-24,Drexel University
-25,University of Maryland - Baltimore County
-26,Brandeis University
-27,Vanderbilt University
-28,Georgia Institute of Technology
-29,University of Nebraska - Lincoln
-30,University of Illinois at Chicago
-31,Pennsylvania State University
-32,University of Minnesota - Twin Cities
-33,McGill University
-34,Iowa State University
-35,Johns Hopkins University
-36,University of California - Berkeley
-37,Stanford University
-38,California Institute of Technology
-39,Washington University - St. Louis
-40,University of California - Santa Barbara
-41,University of California - Riverside
-42,Rutgers - State University of New Jersey - New Brunswick
-43,University of Southern California
-44,Columbia University
-45,Illinois Institute of Technology
-46,University of Virginia
-47,Texas A&M University
-48,Case Western Reserve University
+0,Carnegie Mellon University
+1,University of Michigan
+2,Georgia Institute of Technology
+3,Massachusetts Institute of Technology
+4,University of California - San Diego
+5,Cornell University
+6,University of Maryland - College Park
+7,University of Southern California
+8,Columbia University
+9,University of Waterloo
+10,Arizona State University
+11,Northwestern University
+12,University of California - Irvine
+13,University of Illinois at Urbana-Champaign
+14,Stanford University
+15,University of California - Berkeley
+16,Purdue University
+17,Texas A&M University
+18,Stony Brook University
+19,Duke University
+20,University of Texas - Austin
+21,University of Utah
+22,University of Washington
+23,University of Massachusetts - Amherst
+24,North Carolina State University
+25,Indiana University Bloomington
+26,University of British Columbia
+27,University of Texas - Dallas
+28,University of Colorado Boulder
+29,George Mason University
+30,University of Minnesota - Twin Cities
+31,Oregon State University
+32,University of Tennessee - Knoxville
+33,University of Toronto
+34,Washington State University
+35,University of Pennsylvania
+36,Rutgers - State University of New Jersey - New Brunswick
+37,University of Alberta
+38,New York University
+39,University of California - Los Angeles
+40,University of Chicago
+41,University of Florida
+42,Virginia Polytechnic Institute and State University
+43,University of Wisconsin - Madison
+44,University of North Carolina - Chapel Hill
+45,Ohio State University
+46,University of Calgary
+47,University of California - Santa Cruz
+48,University of California - Santa Barbara
 49,Princeton University
-50,University of Iowa
-51,University of Wisconsin - Madison
-52,Naval Postgraduate University
-53,Michigan State University
-54,William & Mary
-55,Clemson University
-56,Yale University
-57,University of Utah
-58,Northeastern University
-59,University of Arizona
-60,Stony Brook University
-61,University of Washington
-62,Purdue University
-63,Massachusetts Institute of Technology
-64,University of Notre Dame
-65,Simon Fraser University (Canada)
-66,Carnegie Mellon University
-67,University of California - Irvine
-68,University of California - Davis
-69,Northwestern University
-70,University of Toronto
-71,Rensselaer Polytechnic Institute
-72,University of Texas - Austin
-73,University of Oregon
-74,University of Texas - Dallas
-75,University of Massachusetts - Amherst
-76,University of Delaware
-77,University of Calgary
-78,Florida State University
-79,University of Chicago
-80,Colorado State University
-81,Cornell University
-82,Virginia Polytechnic Institute and State University
-83,University of Colorado Boulder
-84,Duke University
-85,Tufts University
-86,University of North Carolina - Chapel Hill
-87,George Mason University
-88,University of Maryland - College Park
-89,University of Alberta
-90,Dartmouth College
-91,University of Michigan
+50,University of California - Davis
+51,University of Maryland - Baltimore County
+52,Pennsylvania State University
+53,Johns Hopkins University
+54,Brown University
+55,Rice University
+56,McGill University
+57,Harvard University
+58,Iowa State University
+59,Clemson University
+60,Rensselaer Polytechnic Institute
+61,Yale University
+62,University of Illinois at Chicago
+63,University of Nebraska - Lincoln
+64,Michigan State University
+65,University of Delaware
+66,University of Virginia
+67,University of California - Riverside
+68,Naval Postgraduate University
+69,University of Pittsburgh
+70,Boston University
+71,Colorado State University
+72,Simon Fraser University (Canada)
+73,University of Notre Dame
+74,Florida State University
+75,University of Rochester
+76,Washington University - St. Louis
+77,University of Iowa
+78,Northeastern University
+79,University of Arizona
+80,William & Mary
+81,Polytechnic Institute of New York University
+82,California Institute of Technology
+83,University of Oregon
+84,Tufts University
+85,Dartmouth College
+86,University of Tulsa
+87,Brandeis University
+88,Vanderbilt University
+89,Case Western Reserve University
