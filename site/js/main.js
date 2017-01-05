@@ -1,8 +1,8 @@
-RANKING_FILTERS = ['All', 'Theory', 'ML', 'Systems'];
+DISPLAY_ROWS = 50;
 
 function createRanking(data) {
   $parent = $('#ranking_body');
-  for (var i = 0; i < data.length; i++) {
+  for (var i = 0; i < Math.min(DISPLAY_ROWS, data.length); i++) {
     var row = $('<tr>');
     for (var j = 0; j < 3; j++) {
       row.append($('<td>').html(data[i][j]));
@@ -17,9 +17,6 @@ function loadRanking(filter) {
     filter = '';
   } else {
     filter = '_' + filter;
-  }
-  if (RANKING_FILTERS.indexOf(filter) == -1) {
-    return;
   }
   var url = 'https://d26rye1dosvzkf.cloudfront.net/ranking_list' + filter + '.txt';
   Papa.parse(url, {
