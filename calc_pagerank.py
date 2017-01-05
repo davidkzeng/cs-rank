@@ -1,6 +1,7 @@
 import numpy as np
 
 from build_markov import generate_graph
+from field import FieldCategory as FC
 
 def pagerank(norm_adj, damp):
   norm_adj = norm_adj.T
@@ -22,10 +23,12 @@ def pagerank(norm_adj, damp):
 
   return cur_dist
 
-def calc_uni_ranks():
-  (top_schools, adj) = generate_graph()
+def calc_uni_ranks(cat=None):
+  (top_schools, adj) = generate_graph(field_filter=cat)
   np_adj = np.array(adj, dtype=np.float64)
-  np_adj_norm = (np_adj.T / np_adj.sum(axis=1)).T
+  N = np_adj.shape[0]
+
+  np_adj_norm = (np_adj.T / np.maximum(np_adj.sum(axis=1), np.ones(N))).T
 
   uni_ranks = pagerank(np_adj_norm, 0.7)
   return (top_schools, uni_ranks)

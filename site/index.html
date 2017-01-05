@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <link rel=
+    <meta name="description" content="Computer Science Rankings">
+    <meta name="keywords" content="computer science rankings, top computer science schools, top computer science universities">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>CSD Rankings</title>
+  </head>
+
+  <body>
+    <div class="page-header">
+      <h1>Computer Science Department Rankings using PageRank</h1>
+    </div>
+    <div class="preface">
+      This site ranks top computer science departments by tracing where each
+      school hires its professors from. Using data from <a href="http://drafty.cs.brown.edu/professors/">drafty.cs.brown.edu/professors</a>, we generate a Markov chain, where each university is represented as a state and the probability to transition to a different university is determined by the fraction of professors who got their PhD's from that university.
+      <br>
+      Note that this ranking was generated primarily for experimental purposes. Feel free to check out
+      <a href="https://github.com/davidz-eng/cs-rank">github.com/davidz-eng/cs-rank</a> for implementation details.
+    </div>
+    <div class="main">
+      <div class="options">
+        Text Options
+      </div>
+      <div class="ranking">
+        Test Ranking
+      </div>
+    </div>
+  </body>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="js/papaparse.min.js"></script>
+  <script src="js/main.js"></script>
+</html>

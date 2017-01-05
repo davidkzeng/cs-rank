@@ -1,0 +1,92 @@
+1,University of California - Berkeley,0.102636535219
+2,Massachusetts Institute of Technology,0.0895578278007
+3,Stanford University,0.0529216184536
+4,Carnegie Mellon University,0.0479231347359
+5,University of Illinois at Urbana-Champaign,0.0388730494255
+6,University of Wisconsin - Madison,0.0298400193554
+7,University of Washington,0.0276204467111
+8,California Institute of Technology,0.0246235754356
+9,University of California - Los Angeles,0.0237673380981
+10,Cornell University,0.0211958360168
+11,University of Toronto,0.0200599075581
+12,Princeton University,0.0197140290485
+13,University of Texas - Austin,0.0177261015477
+14,University of Michigan,0.0171477788863
+15,Georgia Institute of Technology,0.0158308577257
+16,University of Maryland - College Park,0.0155933181717
+17,University of California - Santa Barbara,0.0133264514973
+18,University of Virginia,0.0132181768373
+19,Harvard University,0.0130048553315
+20,University of California - San Diego,0.011685029541
+21,Purdue University,0.0111619284692
+22,Stony Brook University,0.0111126416682
+23,Brown University,0.010334627295
+24,Ohio State University,0.00997296761742
+25,University of Massachusetts - Amherst,0.00994118657666
+26,University of Southern California,0.0096893204271
+27,University of Minnesota - Twin Cities,0.00950652964789
+28,University of California - Irvine,0.00921842724266
+29,Pennsylvania State University,0.00883293933909
+30,University of Pittsburgh,0.00882645002116
+31,University of Colorado Boulder,0.00876000121823
+32,Columbia University,0.00853765147631
+33,Northwestern University,0.00849921823669
+34,Rice University,0.00849187786698
+35,University of Waterloo,0.00820978585231
+36,Michigan State University,0.00771076303286
+37,University of California - Davis,0.00770733668233
+38,Yale University,0.00707044700449
+39,Rutgers - State University of New Jersey - New Brunswick,0.00675352589592
+40,University of Pennsylvania,0.00668151098693
+41,University of North Carolina - Chapel Hill,0.00666514639226
+42,North Carolina State University,0.00625371545538
+43,University of Arizona,0.00596738547474
+44,New York University,0.0056504133756
+45,University of Rochester,0.00556338755479
+46,Boston University,0.0055228396444
+47,University of British Columbia,0.0055082365588
+48,Duke University,0.00508850350949
+49,University of Alberta,0.00502819990626
+50,University of Nebraska - Lincoln,0.00485750106194
+51,Washington University - St. Louis,0.00465485280953
+52,Johns Hopkins University,0.00456613642375
+53,George Mason University,0.0045443862595
+54,University of Utah,0.00426546244112
+55,University of Florida,0.00417022028724
+56,University of Iowa,0.00412033692299
+57,University of California - Riverside,0.00407491023108
+58,Clemson University,0.0040000221416
+59,Brandeis University,0.00388330361162
+60,Vanderbilt University,0.00377390565103
+61,University of California - Santa Cruz,0.00375125057085
+62,Case Western Reserve University,0.00374682866058
+63,University of Chicago,0.00370172546106
+64,Texas A&M University,0.00368273308568
+65,Florida State University,0.00362716788283
+66,Iowa State University,0.00354495135902
+67,University of Calgary,0.00354291529744
+68,McGill University,0.00352357307238
+69,Rensselaer Polytechnic Institute,0.00330979020597
+70,Arizona State University,0.00330979020597
+71,University of Delaware,0.00330979020597
+72,University of Illinois at Chicago,0.00330979020597
+73,Polytechnic Institute of New York University,0.00330979020597
+74,Tufts University,0.00330979020597
+75,Dartmouth College,0.00330979020597
+76,University of Tulsa,0.00330979020597
+77,University of Oregon,0.00330979020597
+78,Washington State University,0.00330979020597
+79,William & Mary,0.00330979020597
+80,Naval Postgraduate University,0.00330979020597
+81,Northeastern University,0.00330979020597
+82,University of Maryland - Baltimore County,0.00330979020597
+83,Colorado State University,0.00330979020597
+84,Simon Fraser University (Canada),0.00330979020597
+85,Drexel University,0.00330979020597
+86,Indiana University Bloomington,0.00330979020597
+87,University of Notre Dame,0.00330979020597
+88,University of Texas - Dallas,0.00330979020597
+89,Virginia Polytechnic Institute and State University,0.00330979020597
+90,Oregon State University,0.00330979020597
+91,University of Tennessee - Knoxville,0.00330979020597
+92,Illinois Institute of Technology,0.00330979020597

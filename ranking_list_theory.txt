@@ -1,0 +1,92 @@
+1,Massachusetts Institute of Technology,0.117964209756
+2,University of California - Berkeley,0.0904043533454
+3,Stanford University,0.0780045526304
+4,Carnegie Mellon University,0.0713927359209
+5,Cornell University,0.0599014788105
+6,Harvard University,0.046657540441
+7,Princeton University,0.0390783943853
+8,University of Illinois at Urbana-Champaign,0.0253933974161
+9,University of Pennsylvania,0.0202630579996
+10,University of Toronto,0.0192237769742
+11,University of California - Los Angeles,0.0177412132028
+12,University of Washington,0.0164466585812
+13,University of Texas - Austin,0.0161634028979
+14,University of Wisconsin - Madison,0.013109121004
+15,University of Waterloo,0.0126648458541
+16,University of Maryland - College Park,0.0120882820075
+17,University of Pittsburgh,0.0114306993077
+18,Yale University,0.010892268035
+19,University of California - San Diego,0.0106556239437
+20,Rice University,0.0104761964766
+21,University of Chicago,0.00946441654082
+22,California Institute of Technology,0.00763856415392
+23,Purdue University,0.00705443654426
+24,Stony Brook University,0.00668753894072
+25,Brown University,0.00667594531505
+26,New York University,0.00638020233563
+27,University of Massachusetts - Amherst,0.00635800310175
+28,University of Colorado Boulder,0.00627287199747
+29,Johns Hopkins University,0.00608514639844
+30,Illinois Institute of Technology,0.00572643344877
+31,University of North Carolina - Chapel Hill,0.0054436643517
+32,Rutgers - State University of New Jersey - New Brunswick,0.00539538354201
+33,University of Minnesota - Twin Cities,0.00538555389037
+34,University of Southern California,0.00483424514271
+35,Northwestern University,0.00468162450835
+36,University of Michigan,0.00464252497957
+37,University of California - Santa Barbara,0.00453151076545
+38,Georgia Institute of Technology,0.00450629418794
+39,North Carolina State University,0.00441201849711
+40,University of Utah,0.00431174633283
+41,University of Alberta,0.00424372086001
+42,University of British Columbia,0.00424372086001
+43,Northeastern University,0.00423278009461
+44,Brandeis University,0.00420239073043
+45,University of Virginia,0.00413320320434
+46,University of California - Davis,0.00413320320434
+47,Columbia University,0.00411328782628
+48,University of Arizona,0.00407669416413
+49,University of Iowa,0.00397948164803
+50,Duke University,0.00395421882781
+51,University of California - Santa Cruz,0.00381455715545
+52,University of Rochester,0.00381455715545
+53,Dartmouth College,0.00375746806127
+54,University of Illinois at Chicago,0.0037557428775
+55,Washington University - St. Louis,0.00365128032671
+56,Simon Fraser University (Canada),0.00333658808212
+57,University of Delaware,0.00333658808212
+58,Polytechnic Institute of New York University,0.00333658808212
+59,University of Oregon,0.00333658808212
+60,Tufts University,0.00333658808212
+61,University of California - Irvine,0.00333658808212
+62,Pennsylvania State University,0.00333658808212
+63,Arizona State University,0.00333658808212
+64,Michigan State University,0.00333658808212
+65,Texas A&M University,0.00333658808212
+66,McGill University,0.00333658808212
+67,University of Tulsa,0.00333658808212
+68,University of Nebraska - Lincoln,0.00333658808212
+69,Vanderbilt University,0.00333658808212
+70,Case Western Reserve University,0.00333658808212
+71,Iowa State University,0.00333658808212
+72,Clemson University,0.00333658808212
+73,William & Mary,0.00333658808212
+74,University of Maryland - Baltimore County,0.00333658808212
+75,Colorado State University,0.00333658808212
+76,University of California - Riverside,0.00333658808212
+77,University of Notre Dame,0.00333658808212
+78,Washington State University,0.00333658808212
+79,Florida State University,0.00333658808212
+80,University of Tennessee - Knoxville,0.00333658808212
+81,Oregon State University,0.00333658808212
+82,Rensselaer Polytechnic Institute,0.00333658808212
+83,George Mason University,0.00333658808212
+84,Boston University,0.00333658808212
+85,University of Texas - Dallas,0.00333658808212
+86,University of Florida,0.00333658808212
+87,Indiana University Bloomington,0.00333658808212
+88,Virginia Polytechnic Institute and State University,0.00333658808212
+89,Naval Postgraduate University,0.00333658808212
+90,Drexel University,0.00333658808212
+91,University of Calgary,0.00333658808212
+92,Ohio State University,0.00333658808212
