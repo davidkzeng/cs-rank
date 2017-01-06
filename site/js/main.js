@@ -12,7 +12,7 @@ function createRanking(data) {
   $('.ranking').removeClass('hidden');
 }
 
-function loadRanking(filter) {
+function loadRanking(filter, callback) {
   if (!filter) {
     filter = '';
   } else {
@@ -23,7 +23,11 @@ function loadRanking(filter) {
     download: true,
     delimiter: ",",
     complete: function(res) {
-      createRanking(res.data);
+      if (callback) {
+        callback(res.data);
+      } else {
+        createRanking(res.data);
+      }
     }
   });
 }
@@ -38,4 +42,5 @@ $('.options input[type=radio]').on('change', function() {
   reloadRanking(this.value);
 });
 
-loadRanking();
+loadRanking('');
+loadMatrix();

@@ -20,9 +20,6 @@ def output_ranking(file, cat=None):
   output = '\n'.join(ranking)
   file.write(output)
 
-rank_list_file = open('ranking_list.txt', 'w')
-output_ranking(rank_list_file)
-
 rank_list_theory_file = open('ranking_list_theory.txt', 'w')
 output_ranking(rank_list_theory_file, FC.Theory)
 
@@ -32,5 +29,6 @@ output_ranking(rank_list_ai_file, FC.AI)
 rank_list_systems_file = open('ranking_list_systems.txt', 'w')
 output_ranking(rank_list_systems_file, FC.Systems)
 
-
+rank_list_file = open('ranking_list.txt', 'w')
+output_ranking(rank_list_file)
 
