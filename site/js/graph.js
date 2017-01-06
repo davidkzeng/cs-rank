@@ -1,77 +1,84 @@
-function createGraph(school_indices, matrix, ranking) {
-  var graph = {};
-  graph.nodes = [];
-  graph.links = [];
-
-  for (var i = 0; i < ranking.length; i++) {
-    var node = {
-      "id": ranking[i][1],
-      "value": Math.sqrt(ranking[i][2] * 10000),
-      "group": i % 10
-    };
-    graph.nodes.push(node);
-  }
-
-  for (var i = 0; i < ranking.length; i++) {
-    for (var j = i + 1; j < ranking.length; j++) {
-      var iIdx = school_indices[ranking[i][1]];
-      var jIdx = school_indices[ranking[j][1]];
-      if (matrix[iIdx][jIdx] > 0) {
-        var link = {
-          "source": ranking[i][1],
-          "target": ranking[j][1],
-          "value": matrix[iIdx][jIdx],
-        };
-        graph.links.push(link);
-      }
-    }
-  }
+function createGraph(schools, school_indices, matrix, ranking) {
+  // Take transpose so matrix represents where professors are headed to
+  // So large = lots of professors being hired at other uni.
+  matrix = _.map(matrix, function(col, i) {
+    return _.map(matrix, function(row) {
+      return row[i];
+    });
+  });
+  console.log(matrix);
+  matrix = _.slice(matrix, 0, 20);
+  matrix = _.map(matrix, function(n) {
+    return _.map(_.slice(n, 0, 20), function(i) {
+      return parseInt(i);
+    });
+  });
 
   var svg = d3.select("svg"),
       width = +svg.attr("width"),
-      height = +svg.attr("height");
-  var color = d3.scaleOrdinal(d3.schemeCategory20);
+      height = +svg.attr("height"),
+      outerRadius = Math.min(width, height) * 0.5 - 10,
+      innerRadius = outerRadius - 24;
 
-  var simulation = d3.forceSimulation()
-      .force("link", d3.forceLink().id(function(d) { return d.id; }))
-      .force("charge", d3.forceManyBody())
-      .force("center", d3.forceCenter(width / 2, height / 2));
+  var formatPercent = d3.format(".1%");
 
-  var link = svg.append("g")
-    .attr("class", "links")
-    .selectAll("line")
-    .data(graph.links)
-    .enter().append("line")
-    .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+  var chord = d3.chord()
+    .sortSubgroups(d3.descending)
+    .sortChords(d3.ascending)
+    .padAngle(0.04);
 
-  var node = svg.append("g")
-    .attr("class", "nodes")
-    .selectAll("circle")
-    .data(graph.nodes)
-    .enter().append("circle")
-    .attr("r", function(d) {return Math.sqrt(d.value)});
+  var arc = d3.arc()
+    .innerRadius(innerRadius)
+    .outerRadius(outerRadius);
 
-  node.append("title")
-      .text(function(d) { return d.id; });
+  var ribbon = d3.ribbon()
+    .radius(innerRadius);
 
-  function ticked() {
-    link
-        .attr("x1", function(d) { return d.source.x; })
-        .attr("y1", function(d) { return d.source.y; })
-        .attr("x2", function(d) { return d.target.x; })
-        .attr("y2", function(d) { return d.target.y; });
+  var color = d3.scaleOrdinal()
+    .domain(d3.range(4))
+    .range(["#000000", "#FFDD89", "#957244", "#F26223"]);
 
-    node
-        .attr("cx", function(d) { return d.x; })
-        .attr("cy", function(d) { return d.y; });
+  var g = svg.append("g")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
+    .datum(chord(matrix));
+
+  var group = g.append("g")
+    .attr("class", "groups")
+    .selectAll("g")
+    .data(function(chords) { return chords.groups; })
+    .enter().append("g")
+    .on("mouseover", mouseover)
+    .on("mouseout", mouseout);
+
+  group.append("title").text(function(d, i) {
+    return schools[i] + ": " + d.value + " origins";
+  });
+
+  group.append("path")
+    .style("fill", function(d) { return color(d.index); })
+    .style("stroke", function(d) { return d3.rgb(color(d.index)).darker(); })
+    .attr("d", arc);
+
+  var ribbons = g.append("g")
+    .attr("class", "ribbons")
+    .selectAll("path")
+    .data(function(chords) { return chords; })
+    .enter().append("path")
+    .attr("d", ribbon)
+    .style("fill", function(d) { return color(d.target.index); })
+    .style("stroke", function(d) { return d3.rgb(color(d.target.index)).darker(); });
+
+  function mouseover(d, i) {
+    ribbons.classed("fade", function(p) {
+      return p.source.index != i && p.target.index != i;
+    });
   }
 
-  simulation
-      .nodes(graph.nodes)
-      .on("tick", ticked);
-
-  simulation.force("link")
-      .links(graph.links);
+  function mouseout(d, i) {
+    ribbons.classed("fade", function(p) {
+      return false;
+    });
+  }
 }
 
 function createMatrix(data) {
@@ -79,7 +86,7 @@ function createMatrix(data) {
   var matrix = data.slice(1, data.length);
   var school_indices = _.zipObject(schools, _.range(0, schools.length));
   loadRanking('', function(ranking) {
-    createGraph(school_indices, matrix, ranking);
+    createGraph(schools, school_indices, matrix, ranking);
   });
 }
 

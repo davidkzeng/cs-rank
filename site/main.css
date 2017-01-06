@@ -33,11 +33,25 @@
   padding: 2px 0px;
 }
 
-.links line {
-  stroke: #999;
-  stroke-opacity: 0.6;
+.ribbons {
+  fill-opacity: 0.67;
 }
 
-.nodes circle {
-  stroke: #fff;
+#circle circle {
+  fill: none;
+  pointer-events: all;
 }
+
+.group path {
+  fill-opacity: .5;
+}
+
+path.chord {
+  stroke: #000;
+  stroke-width: .25px;
+}
+
+#circle:hover path.fade {
+  display: none;
+}
+
