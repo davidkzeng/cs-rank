@@ -21,10 +21,13 @@
   display: none;
 }
 
-.ranking th {
-  padding-right: 5px;
+.options {
+  padding-top: 10px;
 }
 
-.ranking td {
-  padding-right: 5px;
+.filters {
+  padding-top: 2px;
+}
+.options .filterRadio {
+  padding: 2px 0px;
 }
