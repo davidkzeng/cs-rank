@@ -75,7 +75,7 @@ function createGraph(schools, school_indices, matrix, ranking) {
       return ranking[i][3] ? ranking[i][3] : ranking[i][1];
     });
 
-  groupText.filter(function(d, i) { return groupPath._groups[0][i].getTotalLength() / 2 - 22 < this.getComputedTextLength(); })
+  groupText.filter(function(d, i) { return groupPath._groups[0][i].getTotalLength() / 2 - 25 < this.getComputedTextLength(); })
       .remove();
 
   var ribbons = g.append("g")

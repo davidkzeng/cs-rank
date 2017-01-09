@@ -1,5 +1,5 @@
 .page {
-  padding: 0px 20px;
+  padding: 0px 30px 20px;
 }
 
 .main {
@@ -10,6 +10,10 @@
 
 .main .options {
   width: 200px;
+  margin-right: 25px;
+  border-style: solid;
+  border-color: grey;
+  border-width: 0px 1px 0px 0px;
 }
 
 .main .ranking {
@@ -56,5 +60,10 @@ path.chord {
 
 #circle:hover path.fade {
   display: none;
+}
+
+.rank_scrollable {
+  height: 600px; /* or any value */
+  overflow-y: auto;
 }
 

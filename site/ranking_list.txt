@@ -1,6 +1,6 @@
-1,Massachusetts Institute of Technology,0.095490163876,MIT
-2,University of California - Berkeley,0.0807866253197,UC Berkeley
-3,Stanford University,0.0755132998449,Stanford
+1,Massachusetts Institute of Technology,0.095490163876,Massachusetts Institute of Technology
+2,University of California - Berkeley,0.0807866253197,University of California - Berkeley
+3,Stanford University,0.0755132998449,Stanford University
 4,Carnegie Mellon University,0.0490766765991,Carnegie Mellon
 5,Cornell University,0.0296070490016,Cornell
 6,Princeton University,0.0284395084493,Princeton
@@ -12,7 +12,7 @@
 12,University of Toronto,0.0175780267037,UToronto
 13,University of Texas - Austin,0.0163977870601,UT Austin
 14,University of California - Los Angeles,0.0153044868572,UCLA
-15,Georgia Institute of Technology,0.0151459332812,GT
+15,Georgia Institute of Technology,0.0151459332812,GaTech
 16,University of Pennsylvania,0.014851447815
 17,University of Michigan,0.0138520889131
 18,University of Maryland - College Park,0.0134739382238
