@@ -1,4 +1,5 @@
 function createGraph(schools, school_indices, matrix, ranking) {
+
   // Take transpose so matrix represents where professors are headed to
   // So large = lots of professors being hired at other uni.
   matrix = _.map(matrix, function(col, i) {
@@ -6,13 +7,17 @@ function createGraph(schools, school_indices, matrix, ranking) {
       return row[i];
     });
   });
-  console.log(matrix);
-  matrix = _.slice(matrix, 0, 20);
-  matrix = _.map(matrix, function(n) {
-    return _.map(_.slice(n, 0, 20), function(i) {
-      return parseInt(i);
-    });
-  });
+
+  // Create matrix only containg top 15 ranked schools.
+  top_matrix = [];
+  for (var i = 0; i < 15; i++) {
+    top_matrix.push([]);
+    var school_i = school_indices[ranking[i][1]];
+    for (var j = 0; j < 15; j++) {
+      var school_j = school_indices[ranking[j][1]];
+      top_matrix[i].push(parseInt(matrix[school_i][school_j]));
+    }
+  }
 
   var svg = d3.select("svg"),
       width = +svg.attr("width"),
@@ -36,11 +41,11 @@ function createGraph(schools, school_indices, matrix, ranking) {
 
   var color = d3.scaleOrdinal()
     .domain(d3.range(4))
-    .range(["#000000", "#FFDD89", "#957244", "#F26223"]);
+    .range(["#A4C5F9", "#4286F4", "#BAF9A4", "#C9712A"]);
 
   var g = svg.append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
-    .datum(chord(matrix));
+    .datum(chord(top_matrix));
 
   var group = g.append("g")
     .attr("class", "groups")
@@ -51,13 +56,27 @@ function createGraph(schools, school_indices, matrix, ranking) {
     .on("mouseout", mouseout);
 
   group.append("title").text(function(d, i) {
-    return schools[i] + ": " + d.value + " origins";
+    return ranking[i][1] + ": " + d.value + " origins";
   });
 
-  group.append("path")
+  var groupPath = group.append("path")
     .style("fill", function(d) { return color(d.index); })
     .style("stroke", function(d) { return d3.rgb(color(d.index)).darker(); })
-    .attr("d", arc);
+    .attr("d", arc)
+    .attr("id", function(d, i) { return "group" + i; });
+
+  var groupText = group.append("text")
+    .attr("x", 6)
+    .attr("dy", 15);
+
+  groupText.append("textPath")
+    .attr("xlink:href", function(d, i) { return "#group" + i; })
+    .text(function(d, i) {
+      return ranking[i][3] ? ranking[i][3] : ranking[i][1];
+    });
+
+  groupText.filter(function(d, i) { return groupPath._groups[0][i].getTotalLength() / 2 - 22 < this.getComputedTextLength(); })
+      .remove();
 
   var ribbons = g.append("g")
     .attr("class", "ribbons")

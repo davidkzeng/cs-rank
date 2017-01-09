@@ -20,9 +20,9 @@
       </div>
       <div class="preface">
         This site ranks top computer science departments by tracing where each
-        school hires its professors from. Using data from <a href="http://drafty.cs.brown.edu/professors/">drafty.cs.brown.edu/professors</a>, we generate a Markov chain, where each university is represented as a state and the probability to transition to a different university is determined by the fraction of professors who got their PhD's from that university.
-        <br>
-        Note that this ranking was generated primarily for experimental purposes. Feel free to check out
+        school hires its professors from. Using data from <a href="http://drafty.cs.brown.edu/professors/">drafty.cs.brown.edu/professors</a>, we generate a Markov chain, where each university is represented as a state and the probability to transition from university A to university B is determined by the fraction of professors at A who got their PhD's from B.
+        <br><br>
+        This ranking is for experimental purposes and could use improvement. Feel free to check out
         <a href="https://github.com/davidz-eng/cs-rank">github.com/davidz-eng/cs-rank</a> for implementation details.
       </div>
       <div class="main">
@@ -55,8 +55,12 @@
           </table>
         </div>
       </div>
-      <div class="graphic">
-        <svg width="800" height="800"><svg>
+      <div class="bottom">
+        <h2>Relation Between Top 15 Ranked Universities</h2>
+        <div class="graphic">
+          <svg width="700" height="700"><svg>
+        </div>
+        The number of PhD's from university A hired by university B is represented by the size of the connection originating at university A's arc.
       </div>
     </div>
   </body>
